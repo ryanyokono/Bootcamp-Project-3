@@ -3,35 +3,56 @@
 <head>
 	<meta charset="utf-8">
 	<title>Chatting with Lingo</title>
-    <link rel="stylesheet" type="text/css" href="project3styles.css">
+	<link rel="stylesheet" type="text/css" href="project3styles.css">
 </head>
 <body>
 	<h1>Chatting with Lingo</h1>
 	<div class="chat">
-		<div class="message lingo">
+		<div class="message lingo hidden">
 			<div class="user">Lingo</div>
 			<div class="text">Hey there, Liam! I see that you're interested in learning Chinese. That's fantastic! 🐉 To make your learning journey as personalized and efficient as possible, I'd love to understand your current proficiency level. Let's have a quick chat in Chinese, shall we? 😊</div>
 		</div>
-        <div class="message lingo">
+        <div class="message lingo hidden">
 			<div class="text">你好，你叫什么名字？(Nǐ hǎo, nǐ jiào shénme míngzì?) - Hello, what's your name?</div>
 		</div>
-		<div class="message liam">
+		<div class="message liam hidden">
 			<div class="user">Liam</div>
-			<div class="text">你好，我叫Liam。(Nǐ hǎo, wǒ jiào Liam.) - Hello, my name is Liam.</div>
+			<div class="text">你好, 我叫 Liam。(Nǐ hǎo, wǒ jiào Liam.) - Hello, my name is Liam.</div>
 		</div>
-		<div class="message lingo">
+		<div class="message lingo hidden">
 			<div class="user">Lingo</div>
-			<div class="text">很高兴认识你，Liam！你会说多少中文？(Hěn gāoxìng rènshí nǐ, Liam! Nǐ huì shuō duōshǎo zhōngwén?) - Nice to meet you, Liam! How much Chinese can you speak?</div>
+			<div class="text">很高兴认识你, Liam! 你会说多少中文？(Hěn gāoxìng rènshí nǐ, Liam! Nǐ huì shuō duōshǎo zhōngwén?) - Nice to meet you, Liam! How much Chinese can you speak?</div>
 		</div>
-		<div class="message liam">
+		<div class="message liam hidden">
 			<div class="user">Liam</div>
 			<div class="text">我会说一点点。(Wǒ huì shuō yīdiǎndiǎn.) - I can speak a little.</div>
 		</div>
-        <div class="message lingo">
+        <div class="message lingo hidden">
 			<div class="user">Lingo</div>
 			<div class="text">Great, Liam! Your basics seem solid. 🌟 Let's push a little further. Can you tell me what you did today in Chinese?</div>
 		</div>
 	</div>
 	<div class="input">
 		<input type="text" placeholder="Type a message...">
-		<button
+		<button>Send</button>
+	</div>
+	
+	<script>
+		// Get all the message bubbles
+		const messages = document.querySelectorAll('.message');
+
+		// Set the delay time in milliseconds
+		const delay = 4000;
+
+
+		// Loop through each message bubble
+		messages.forEach((message, index) => {
+			// Set a delay for each message
+			setTimeout(() => {
+				// Show the message by adding the 'show' class instead of removing the 'hidden' class
+				message.classList.add('show');
+			}, delay * index); // Multiply the delay by the index to stagger the messages
+		});
+	</script>
+</body>
+</html>
