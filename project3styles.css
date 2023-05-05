@@ -278,6 +278,29 @@ div.real-world {
   padding: 0rem 2rem;
 }
 
+.hero-title {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+.intro-text {
+  margin-bottom: 2rem;
+  font-size: 1.5rem; 
+  line-height: 1.5;
+  color: #dfe6e9;
+}
+
+.hero-container-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 2rem;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+}
 
 .ai-page-btn {
   font: dinnextroundedltpuploadedfile, Arial;
