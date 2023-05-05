@@ -156,11 +156,15 @@ h1 {
 
 
 
+  .logo img {
+    width: 250px;
+    height: auto; /* set height to auto to maintain aspect ratio */
+  }
   
 
   nav {
     display: flex;
-    align-items: right;
+    align-items: center;
     justify-content: space-between;
     background-color: #fff; /* set the background color of the navbar */
     padding: 20px;
