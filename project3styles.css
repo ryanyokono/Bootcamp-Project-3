@@ -32,6 +32,7 @@ h1 {
     color: #ffffff;
     text-align: center;
     margin-bottom: 30px;
+    font-size: 64px;
 }
 
 h2 {
@@ -269,4 +270,22 @@ div.real-world {
   border: #3aa2cf;
   border-radius: 10px;
   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tryout-lingo {
+  background-color: #1CB0F6;
 }
