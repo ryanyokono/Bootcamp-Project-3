@@ -36,7 +36,6 @@ body {
 h1 {
     font-family: featherbold, Arial, Helvetica, sans-serif;
     color: #ffffff;
-    text-align: center;
     margin-bottom: 30px;
     font-size: 64px;
 }
@@ -266,8 +265,9 @@ div.real-world {
 .hero-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 40vh;
+  height: 50vh;
   padding: 3rem calc((100vw - 1300px) / 2);
+  margin-left: 10%;
 }
 
 .hero-container-1 {
@@ -281,13 +281,15 @@ div.real-world {
 .hero-title {
   margin-bottom: 1rem;
   font-size: 3rem;
+  justify-content: right;
+  margin-top: 20%;
 }
 
 .intro-text {
   margin-bottom: 2rem;
   font-size: 1.5rem; 
   line-height: 1.5;
-  color: #dfe6e9;
+  color: hsl(0, 0%, 100%);
 }
 
 .hero-container-2 {
@@ -298,8 +300,10 @@ div.real-world {
 }
 
 .hero-image {
-  width: 100%;
+  width: 27rem;
   height: 100%;
+  margin-right: 10%;
+  
 }
 
 .ai-page-btn {
