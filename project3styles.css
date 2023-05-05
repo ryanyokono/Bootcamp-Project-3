@@ -33,6 +33,7 @@ h1 {
     color: #58CC02;
     text-align: center;
     margin-bottom: 30px;
+    font-size: 64px;
 }
 
 .chat {
@@ -258,4 +259,22 @@ div.real-world {
   border: #3aa2cf;
   border-radius: 10px;
   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tryout-lingo {
+  background-color: #1CB0F6;
 }
