@@ -320,10 +320,9 @@ div.real-world {
   align-items: center;
   padding-left: 50px;
   padding-right: 50px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-top: 80px;
-  gap: 10px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  gap: 50px;
   width: 201px;
   height: 50px;
   background: #FFFFFF;
@@ -362,7 +361,7 @@ div.real-world {
 }
 
 .header {
-  margin: 0;
+  margin-bottom: 20px;
   text-align: left;
 }
 
@@ -370,3 +369,8 @@ div.real-world {
   margin: 0;
 }
 
+.footer-image {
+  margin-left: auto;
+  max-width: 100%;
+  height: auto;
+}
