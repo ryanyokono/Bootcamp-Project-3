@@ -160,7 +160,7 @@ h1 {
 
   nav {
     display: flex;
-    align-items: right;
+    align-items: center;
     justify-content: space-between;
     background-color: #fff; /* set the background color of the navbar */
     padding: 20px; /* add some padding to the navbar */
