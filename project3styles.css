@@ -377,14 +377,19 @@ div.real-world {
 
 .footercontainer {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   max-width: 600px;
   margin: 0;
   padding: 50px;
   box-sizing: border-box;
+  justify-content: flex-start;
+}
+
+.header-button-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -397,7 +402,7 @@ div.real-world {
 }
 
 .footer-image {
-  margin-left: auto;
   max-width: 100%;
   height: auto;
 }
+
