@@ -198,3 +198,20 @@ h1 {
     background-color: #4c64d1;
   }
   
+div.lessons {
+  display: flex;
+  
+}
+
+div.feedback {
+  display: flex;
+}
+
+div.learning {
+  display: flex;
+}
+
+div.real-world {
+  display: flex;
+  flex-direction: row-reverse;
+}
