@@ -25,7 +25,7 @@
 body {
     font-family: dinnextroundedltw01-regularrg, Arial, Helvetica, sans-serif;
     background-color: #f1f2f6;
-    padding: 20px;
+    padding: 0;
 }
 
 h1 {
@@ -151,12 +151,20 @@ h1 {
     }
   }
   
+
+
+
+
+
+  
+
   nav {
     display: flex;
-    align-items: center;
+    align-items: right;
     justify-content: space-between;
     background-color: #fff; /* set the background color of the navbar */
-    padding: 20px; /* add some padding to the navbar */
+    padding: 20px;
+    margin: 0;
   }
   
   .nav-links {
@@ -164,6 +172,7 @@ h1 {
     list-style: none;
     margin: 0;
     padding: 0;
+    font-family: dinnextroundedltw01-regularRg; 
   }
   
   .nav-links li {
@@ -182,19 +191,21 @@ h1 {
     padding: 10px;
   }
   
-  .auth-buttons button {
-    background-color: #5c78ff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin-left: 20px;
+  .login-buttons,
+  .signup-buttons {
+    display: inline-block;
+    margin-right: 0px;
   }
   
-  .auth-buttons button:hover {
-    background-color: #4c64d1;
+  .login-buttons img,
+  .signup-buttons img {
+    width: 100px;
   }
+  
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
   
