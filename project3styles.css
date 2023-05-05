@@ -1,10 +1,35 @@
+@font-face {
+  font-family: 'featherbold';
+  src: url('font/feather_bold_by_typicalbro44_dee263c-webfont.woff2') format('woff2'),
+       url('fonts/feather_bold_by_typicalbro44_dee263c-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'dinnextroundedltpuploadedfile';
+  src: url('fonts/') format('woff2'),
+       url('fonts/din_next_rounded_lt_pro_bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'dinnextroundedltw01-regularRg';
+  src: url('fonts/din_next_rounded_lt_w01_regular-webfont.woff2') format('woff2'),
+       url('fonts/din_next_rounded_lt_w01_regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: dinnextroundedltw01-regularrg, Arial, Helvetica, sans-serif;
     background-color: #f1f2f6;
     padding: 20px;
 }
 
 h1 {
+    font-family: featherbold, Arial, Helvetica, sans-serif;
     color: #0984e3;
     text-align: center;
     margin-bottom: 30px;
