@@ -201,7 +201,19 @@ h1 {
   .signup-buttons img {
     width: 100px;
   }
-  
+ 
+  .ai-page-btn {
+    font-family:'dinnextroundedltpuploadedfile',Arial, Helvetica, sans-serif ;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border: #2f5d0b;
+    background-color: #58CC02;
+    color:#dfe6e9;
+    padding: 10px;
+    border-radius: 5px;
+    border-width: 15px;
+    
+    }
   .button-container {
     display: flex;
     justify-content: flex-end;
