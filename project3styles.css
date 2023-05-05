@@ -155,15 +155,21 @@ h1 {
 
 
 
-
+  .logo img {
+    width: 250px;
+    height: auto; /* set height to auto to maintain aspect ratio */
+    margin-right: auto; /* push the logo to the left */
+  }
+  
   
 
   nav {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     background-color: #fff; /* set the background color of the navbar */
-    padding: 20px; /* add some padding to the navbar */
+    padding: 20px;
+    margin: 0;
   }
   
   .nav-links {
@@ -174,11 +180,11 @@ h1 {
   }
   
   .nav-links li {
-    margin-right: 20px;
+    margin-left: 10px; /* adjust the spacing between links */
   }
   
-  .nav-links li:last-child {
-    margin-right: 0;
+  .nav-links li:first-child {
+    margin-left: 0; /* remove margin for the first link */
   }
   
   .nav-links a {
@@ -187,6 +193,23 @@ h1 {
     font-size: 18px;
     font-weight: bold;
     padding: 10px;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .login-buttons,
+  .signup-buttons {
+    display: inline-block;
+    margin-right: 10px; /* adjust the margin as needed */
+  }
+  
+  .login-buttons img,
+  .signup-buttons img {
+    width: 100px;
   }
   
   .auth-buttons button {
