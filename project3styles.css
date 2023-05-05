@@ -29,7 +29,7 @@
 }
 
 body {
-    font-family: dinnextroundedltw01-regularrg, Arial, Helvetica, sans-serif;
+    font-family: dinnextroundedltw01-regularRg, Arial, Helvetica, sans-serif;
     background-color: #f1f2f6;
 }
 
@@ -177,51 +177,72 @@ h3 {
 
 
 
-  .logo img {
+  .logo {
     width: 250px;
-    height: auto; /* set height to auto to maintain aspect ratio */
-    margin-right: auto; /* push the logo to the left */
+    height: auto;
+    margin-right: auto;
   }
   
   
 
-  nav {
-    display: flex;
-    justify-content: space-between;
+  .navbar {
+    background: #fff;
+    border-bottom: 2px solid #e5e5e5;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 210;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  
+  .navitems {
     align-items: center;
-    background-color: #fff; /* set the background color of the navbar */
-    padding: 20px;
-    margin: 0;
-  }
-  
-  .nav-links {
     display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
   }
   
-  .nav-links li {
-    margin-left: 10px; /* adjust the spacing between links */
-  }
-  
-  .nav-links li:first-child {
-    margin-left: 0; /* remove margin for the first link */
-  }
-  
-  .nav-links a {
-    color: #333;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px;
+  .navlinks {
+    align-items: center;
+    display: flex;
+    border: 0;
+    font-size: 120%;
+    vertical-align: baseline;
+    gap: 80px;
   }
 
-  .button-container {
+  .navlinks a {
+    border-bottom: 3px solid transparent; 
+    padding-bottom: 10px;
+    padding-top: 10px;
+    transition: border-color 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .navlinks a:hover {
+    border-color: #74b9ff;
+  }
+  
+  .sectionlinks {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    font-family: dinnextroundedltpuploadedfile;
+    color: #767373;
+    gap: 30px;
+    white-space: nowrap;
+  }
+
+
+
+  .buttoncontainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
+    margin-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
   
   
@@ -266,7 +287,10 @@ div.real-world {
 }
 
 .hero-banner-2 {
-
+  width: 20rem;
+  height: 100%;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
 .hero-container {
@@ -366,11 +390,38 @@ div.real-world {
 
 
 .footer {
-  background-color: #1CB0F6;
-  margin-left: 20px;
+  align-items: center;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  background-color: #1CAFF6;
+  margin-top: 50px;
+  padding: 50px;
 }
 
-.tryitout-button {
+/* Add a media query for screens smaller than 600px */
+@media (max-width: 1200px) {
+  .footer {
+    flex-direction: column;
+  }
+  
+  .groupselfie {
+    order: 1; /* Move the image to the bottom */
+    margin-top: 20px; /* Add some spacing */
+  }
+  
+  .footertext {
+    order: 2; /* Move the text to the top */
+    text-align: center; /* Center the text */
+    margin-left: 50px;
+  }
+  .tryitourbutton {
+    order: 3; /* Move the text to the top */
+    text-align: center; /* Center the text */
+  }
+}
+
+.tryitoutbutton {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -404,6 +455,14 @@ div.real-world {
   text-transform: uppercase;
   color: #1CAFF6;
   white-space: nowrap;
+  transition: background-color 0.3s ease-in-out;
+  
+}
+
+.tryitoutbutton:hover {
+  background-color: #f1f1f1;
+  
+  
 }
 
 .signupbutton {
@@ -414,8 +473,8 @@ div.real-world {
   align-items: center;
   padding-left: 50px;
   padding-right: 50px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   gap: 50px;
   width: 201px;
   height: 50px;
@@ -440,6 +499,13 @@ div.real-world {
   text-transform: uppercase;
   color: #ffffff;
   white-space: nowrap;
+  transition: background-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.signupbutton:hover {
+  background-color: #52c4f9;
+  border-color: #52c4f9;
 }
 
 .loginbutton {
@@ -450,8 +516,8 @@ div.real-world {
   align-items: center;
   padding-left: 50px;
   padding-right: 50px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   gap: 50px;
   width: 201px;
   height: 50px;
@@ -476,19 +542,13 @@ div.real-world {
   text-transform: uppercase;
   color: #1CAFF6;
   white-space: nowrap;
+  transition: background-color 0.3s ease-in-out;
 }
 
-.footercontainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-width: 600px;
-  margin: 0;
-  padding: 50px;
-  box-sizing: border-box;
-  justify-content: flex-start;
+.loginbutton:hover {
+  background-color: #f1f1f1;
 }
+
 
 .header-button-container {
   color: #fff;
@@ -503,13 +563,3 @@ div.real-world {
   margin-bottom: 20px;
   text-align: left;
 }
-
-.tryitout-button {
-  margin: 0;
-}
-
-.footer-image {
-  max-width: 100%;
-  height: auto;
-}
-
