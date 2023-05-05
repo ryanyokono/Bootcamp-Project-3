@@ -286,8 +286,9 @@ div.real-world {
 
 
 
-.tryout-lingo {
+.footer {
   background-color: #1CB0F6;
+  margin-left: 20px;
 }
 
 .tryitout-button {
@@ -296,7 +297,11 @@ div.real-world {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 20px 45px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 80px;
   gap: 10px;
   width: 201px;
   height: 50px;
@@ -323,14 +328,14 @@ div.real-world {
   white-space: nowrap;
 }
 
-.container {
+.footercontainer {
   display: flex;
   flex-direction: column;
-  justify-content: left;
+  justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0;
   padding: 50px;
   box-sizing: border-box;
 }
@@ -340,6 +345,7 @@ div.real-world {
   text-align: left;
 }
 
-.my-button {
+.tryitout-button {
   margin: 0;
 }
+
