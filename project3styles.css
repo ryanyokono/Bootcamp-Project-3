@@ -38,9 +38,17 @@ h1 {
 h2 {
   font-family: featherbold, Arial, Helvetica, sans-serif;
   color: #58CC02;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-family: featherbold, Arial, Helvetica, sans-serif;
+  color: #58CC02;
   text-align: left;
   margin-bottom: 30px;
 }
+
 
 .chat {
     background-color: #fff;
