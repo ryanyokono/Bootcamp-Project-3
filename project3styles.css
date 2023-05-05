@@ -261,8 +261,23 @@ div.real-world {
 
 .hero-banner {
   background-color: #1CB0F6;
-
 }
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 40vh;
+  padding: 3rem calc((100vw - 1300px) / 2);
+}
+
+.hero-container-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0rem 2rem;
+}
+
 
 .ai-page-btn {
   font: dinnextroundedltpuploadedfile, Arial;
