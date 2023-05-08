@@ -327,6 +327,7 @@ div.real-world {
   justify-content: center;
   align-items: center;
   padding: 0rem 2rem;
+  height: 300px;
   
 }
 
@@ -380,6 +381,8 @@ div.real-world {
   grid-template-columns: 1fr 1fr;
   height: 50vh;
   padding: 3rem calc((100vw - 1300px) / 2);
+  margin-top: 80px;
+  margin-bottom: 80px;
   
 }
 
@@ -389,6 +392,8 @@ div.real-world {
   justify-content: center;
   align-items: flex-start;
   padding: 0rem 4rem;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .title-2 {
@@ -409,14 +414,16 @@ div.real-world {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0rem 2rem;
+  padding: 0rem 4rem;
+  margin-top: 40px;
+  margin-bottom: 40px;
   
 }
 
 .image-2 {
   width: 100%;
   max-width: 900px;
-  height: auto;
+  height: 250px;
 }
 
 /* instant feedback*/
@@ -425,6 +432,8 @@ div.real-world {
   grid-template-columns: 1fr 1fr;
   height: 50vh;
   padding: 3rem calc((100vw - 1300px) / 2);
+  margin-top: 80px;
+  margin-bottom: 80px;
   
 }
 
@@ -434,6 +443,8 @@ div.real-world {
   justify-content: center;
   align-items: flex-start;
   padding: 0rem 4rem;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .title-3 {
@@ -459,7 +470,7 @@ div.real-world {
 
 .image-3 {
   width: 100%;
-  max-width: 450px;
+  max-width: 300px;
   height: auto;
 }
 
@@ -469,6 +480,8 @@ div.real-world {
   grid-template-columns: 1fr 1fr;
   height: 50vh;
   padding: 3rem calc((100vw - 1300px) / 2);
+  margin-top: 80px;
+  margin-bottom: 80px;
   
 }
 
@@ -504,7 +517,7 @@ div.real-world {
 .image-4 {
   width: 100%;
   max-width: 450px;
-  height: auto;
+  height: 300px;
 }
 
 /* real-world */
@@ -513,6 +526,8 @@ div.real-world {
   grid-template-columns: 1fr 1fr;
   height: 50vh;
   padding: 3rem calc((100vw - 1300px) / 2);
+  margin-top: 80px;
+  margin-bottom: 80px;
   
 }
 
@@ -548,7 +563,7 @@ div.real-world {
 .image-5 {
   width: 100%;
   max-width: 650px;
-  height: auto;
+  height: 250px;
 }
 
 
@@ -565,6 +580,14 @@ div.real-world {
   margin-top: 50px;
   padding: 50px;
 }
+
+.groupselfie{
+  width: 100%;
+  max-width: 650px;
+  height: 400px;
+}
+
+
 
 /* Add a media query for screens smaller than 600px */
 @media (max-width: 1200px) {
@@ -623,6 +646,7 @@ div.real-world {
   color: #1CAFF6;
   white-space: nowrap;
   transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
   
 }
 
@@ -730,4 +754,8 @@ div.real-world {
 .header {
   margin-bottom: 20px;
   text-align: left;
+}
+
+a {
+  text-decoration: none;
 }
