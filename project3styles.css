@@ -249,12 +249,31 @@ h3 {
   }
   
 div.lessons {
-  display: flex;
-  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 50vh;
+  padding: 40px;
+  margin-right: 10%;
+}
+
+div.lessons-image {
+  width: 27rem;
+  height: 100%;
+  margin-left: 10%;
 }
 
 div.feedback {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 50vh;
+  padding: 40px;
+  margin-left: 10%;
+}
+
+div.feedback-image {
+  width: 27rem;
+  height: 100%;
+  margin-right: 10%;
 }
 
 div.learning {
