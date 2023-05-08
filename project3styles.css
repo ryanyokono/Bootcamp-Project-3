@@ -584,10 +584,8 @@ div.real-world {
 .groupselfie{
   width: 100%;
   max-width: 650px;
-  height: 400px;
+  height: 300px;
 }
-
-
 
 /* Add a media query for screens smaller than 600px */
 @media (max-width: 1200px) {
@@ -646,7 +644,6 @@ div.real-world {
   color: #1CAFF6;
   white-space: nowrap;
   transition: background-color 0.3s ease-in-out;
-  cursor: pointer;
   
 }
 
@@ -754,8 +751,4 @@ div.real-world {
 .header {
   margin-bottom: 20px;
   text-align: left;
-}
-
-a {
-  text-decoration: none;
 }
