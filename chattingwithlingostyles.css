@@ -1,0 +1,384 @@
+@font-face {
+    font-family: 'featherbold';
+    src: url('font/feather_bold_by_typicalbro44_dee263c-webfont.woff2') format('woff2'),
+         url('fonts/feather_bold_by_typicalbro44_dee263c-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'dinnextroundedltpuploadedfile';
+    src: url('fonts/') format('woff2'),
+         url('fonts/din_next_rounded_lt_pro_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'dinnextroundedltw01-regularRg';
+    src: url('fonts/din_next_rounded_lt_w01_regular-webfont.woff2') format('woff2'),
+         url('fonts/din_next_rounded_lt_w01_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  .logo {
+    width: 250px;
+    height: auto;
+    margin-right: auto;
+  }
+  
+  
+
+  .navbar {
+    background: #fff;
+    border-bottom: 2px solid #e5e5e5;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 210;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  
+  .navitems {
+    align-items: center;
+    display: flex;
+  }
+  
+  .navlinks {
+    align-items: center;
+    display: flex;
+    border: 0;
+    font-size: 120%;
+    vertical-align: baseline;
+    gap: 80px;
+  }
+
+  .navlinks a {
+    border-bottom: 3px solid transparent; 
+    padding-bottom: 10px;
+    padding-top: 10px;
+    transition: border-color 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .navlinks a:hover {
+    border-color: #74b9ff;
+  }
+  
+  .sectionlinks {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    font-family: dinnextroundedltpuploadedfile;
+    color: #767373;
+    gap: 30px;
+    white-space: nowrap;
+  }
+
+
+
+  .buttoncontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  
+  
+
+  
+  .auth-buttons button {
+    background-color: #5c78ff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  
+  .auth-buttons button:hover {
+    background-color: #4c64d1;
+  }
+
+  .signupbutton {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 50px;
+    width: 201px;
+    height: 50px;
+    background: #1CAFF6;
+    border: 3px solid #1CAFF6;
+    box-shadow: 0px 4px 0px #199AD6;
+    border-radius: 16px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    width: 125px;
+    height: 18px;
+    font-family: 'dinnextroundedltpuploadedfile';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #ffffff;
+    white-space: nowrap;
+    transition: background-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .signupbutton:hover {
+    background-color: #52c4f9;
+    border-color: #52c4f9;
+  }
+  
+  .loginbutton {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 50px;
+    width: 201px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 3px solid #E5E5E5;
+    box-shadow: 0px 4px 0px #E5E5E5;
+    border-radius: 16px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    width: 125px;
+    height: 18px;
+    font-family: 'dinnextroundedltpuploadedfile';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #1CAFF6;
+    white-space: nowrap;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .loginbutton:hover {
+    background-color: #f1f1f1;
+  }
+
+
+
+
+
+body {
+    font-family: dinnextroundedltw01-regularRg, Arial, Helvetica, sans-serif;
+    background-color: #f1f2f6;
+    overflow:auto;
+    padding-bottom: 100px;
+}
+
+h1 {
+    font-family: featherbold;
+    color: #43C000;
+    margin: 20px 60px 20px auto; /* Set the left margin to "auto" to align the header to the right */
+    font-size: 50px;
+    padding: 0;
+    text-align: right; /* Align the header text to the right */
+  }
+
+h2 {
+  font-family: featherbold;
+  color: #58CC02;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-family: featherbold, Arial, Helvetica, sans-serif;
+  color: #58CC02;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+
+.chat {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    margin: 20px 60px 20px 400px;
+    overflow-y: auto;
+    height: 600px;
+}
+  
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2px;
+  }
+  
+  
+  .message {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    margin-bottom: 10px;
+  }
+
+
+.chatbubblelingo {
+    background-color: #58CC02;
+    color: #fff;
+    margin: 0px 2px 2px 0px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 15px;
+    border-radius: 15px;
+    word-wrap: break-word;
+    max-width: 70%;
+}
+
+.usernamelingo {
+    font-weight: bold;
+    color: #0984e3;
+    margin-bottom: 5px; 
+}
+
+.chatbubbleuser {
+    background-color: #E5E5E5;
+    align-self: flex-end;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 15px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+
+.usernameuser {
+    align-self: flex-end;
+    font-weight: bold;
+    color: #0984e3;
+    margin-bottom: 5px;
+}
+
+.usernamesarah {
+    align-self: flex-end;
+    font-weight: bold;
+    color: #0984e3;
+    margin-bottom: 5px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 600px;
+    margin-right: 60px;
+    margin-bottom: 100px;
+}
+
+.input input {
+    flex: 1;
+    font-size: 16px;
+    font-family: dinnextroundedltw01-regularRg;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #dfe6e9;
+    margin-right: 10px;
+}
+
+.input button {
+    font-size: 16px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #0984e3;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+}
+
+.input button:hover {
+    background-color: #74b9ff;
+}
+
+
+.sendbutton {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 50px;
+    width: 100px;
+    height: 50px;
+    background: #1CAFF6;
+    border: 3px solid #1CAFF6;
+    box-shadow: 0px 4px 0px #199AD6;
+    border-radius: 16px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    width: 125px;
+    height: 18px;
+    font-family: 'dinnextroundedltpuploadedfile';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #ffffff;
+    white-space: nowrap;
+    transition: background-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+  }
