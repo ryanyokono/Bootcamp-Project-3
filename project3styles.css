@@ -734,6 +734,7 @@ div.real-world {
   border: 2px solid #ccc;
   border-radius: 10px;
   margin-top: 50px;
+  box-sizing: border-box;
 }
 
 .accordion-item {
@@ -774,13 +775,13 @@ div.real-world {
 .accordion-content {
   width: 100%;
   max-height: 0;
-  padding: 20px
   overflow: hidden;
   transition: max-height 0.3s ease-in-out;
+  padding: 20px;
 }
 
 .accordion-item.active .accordion-content {
-  max-height: 500px;
+  max-height: calc(100% - 40px);
 }
 
 .more-faq {
@@ -805,3 +806,6 @@ div.real-world {
 .more-faq button:hover {
   background-color: #ddd;
 }
+
+
+
