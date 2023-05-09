@@ -325,6 +325,7 @@ div.real-world {
   white-space: nowrap;
 }
 
+
 /* personalized lessons */
 .container-2 {
   display: grid;
@@ -540,23 +541,62 @@ div.real-world {
 /* Add a media query for screens smaller than 600px */
 @media (max-width: 1200px) {
   .footer {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1CAFF6;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   
   .groupselfie {
-    order: 1; /* Move the image to the bottom */
-    margin-top: 20px; /* Add some spacing */
+    width: 400px;
+    margin-bottom: 50px;
   }
   
   .footertext {
-    order: 2; /* Move the text to the top */
-    text-align: center; /* Center the text */
-    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-  .tryitourbutton {
-    order: 3; /* Move the text to the top */
-    text-align: center; /* Center the text */
-  }
+
+.footerheader {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.tryitoutbutton {
+  text-decoration: none;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 20px;
+  width: 180px;
+  height: 50px;
+  background: #FFFFFF;
+  border: 3px solid #E5E5E5;
+  box-shadow: 0px 4px 0px #E5E5E5;
+  border-radius: 16px;
+  font-family: 'dinnextroundedltw01-regularRg';
+  font-style: normal;
+  font-size: 1.3rem;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #1CAFF6;
+  white-space: nowrap;
+}
 }
 
 .tryitoutbutton {
@@ -720,7 +760,7 @@ div.real-world {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Creates grid with a minimum width of 300px and equal column widths */
   grid-gap: 30px; /* Sets gap between grid items */
   background-color: #58CC02;
-  padding: 50px;
+  padding: 40px;
 }
 
 .testimonial {
@@ -760,10 +800,19 @@ div.real-world {
   text-align: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .testimonials {
     padding: 30px;
   }
+
+}
+.testimonial-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 
@@ -773,6 +822,8 @@ div.real-world {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .table {
