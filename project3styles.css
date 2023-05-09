@@ -62,7 +62,7 @@ h3 {
 
 
   
-
+/* nav section */
 
 
 
@@ -175,62 +175,10 @@ h3 {
     }
   }
   
-
   
-  .auth-buttons button {
-    background-color: #5c78ff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin-left: 20px;
-  }
-  
-  .auth-buttons button:hover {
-    background-color: #4c64d1;
-  }
-  
-div.lessons {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 50vh;
-  padding: 40px;
-  margin-right: 10%;
-}
+  /* Hero Section */
 
-div.lessons-image {
-  width: 27rem;
-  height: 100%;
-  margin-left: 10%;
-}
 
-div.feedback {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 50vh;
-  padding: 40px;
-  margin-left: 10%;
-}
-
-div.feedback-image {
-  width: 27rem;
-  height: 100%;
-  margin-right: 10%;
-}
-
-div.learning {
-  display: flex;
-}
-
-div.real-world {
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-/* Hero Section Blue */
 .hero-banner {
   align-items: center;
   display: flex;
@@ -254,7 +202,6 @@ div.real-world {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 0rem 4rem;
 }
 
 .hero-title {
@@ -323,6 +270,96 @@ div.real-world {
   text-transform: uppercase;
   color: #1CAFF6;
   white-space: nowrap;
+}
+
+/* Small screens (mobile) */
+@media only screen and (max-width: 1200px) {
+
+  /* Adjust hero-container properties for small screens */
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-bottom;: 20px
+    margin-bottom: 30px;
+  }
+
+  /* Adjust hero-banner-1 properties for small screens */
+  .hero-banner-1 {
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  /* Adjust hero-title properties for small screens */
+  .hero-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Adjust intro-text properties for small screens */
+  .intro-text {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Adjust hero-image properties for small screens */
+  .hero-image {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    margin-right: 0;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  /* Adjust tryitoutbutton properties for small screens */
+  .tryitoutbutton {
+    
+    font-size: 1.2rem;
+    padding-bottom: 30px;
+  }
+}
+
+
+
+
+div.lessons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 50vh;
+  padding: 40px;
+  margin-right: 10%;
+}
+
+div.lessons-image {
+  width: 27rem;
+  height: 100%;
+  margin-left: 10%;
+}
+
+div.feedback {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 50vh;
+  padding: 40px;
+  margin-left: 10%;
+}
+
+div.feedback-image {
+  width: 27rem;
+  height: 100%;
+  margin-right: 10%;
+}
+
+div.learning {
+  display: flex;
+}
+
+div.real-world {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 
