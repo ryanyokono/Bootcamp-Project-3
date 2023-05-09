@@ -205,6 +205,7 @@ div.real-world {
   grid-template-columns: 1fr 1fr;
   height: 50vh;
   padding: 3rem calc((100vw - 1300px) / 2);
+  margin-bottom: 60px;
   
 }
 
@@ -242,8 +243,9 @@ div.real-world {
   width: 150%;
   max-width: 400px;
   height: auto;
-  margin-right: 30%;
-  margin-top: 25%;
+  margin-right: 60px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .ai-page-btn {
@@ -759,6 +761,8 @@ div.real-world {
   font-family: dinnextroundedltw01-regularRg;
 }
 
-
+a {
+  text-decoration: none;
+}
 
 
