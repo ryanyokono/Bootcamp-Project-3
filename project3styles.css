@@ -70,6 +70,7 @@ h3 {
     width: 250px;
     height: auto;
     margin-right: auto;
+    padding-right: 20px;
   }
   
   
@@ -134,6 +135,45 @@ h3 {
     padding-bottom: 5%;
   }
   
+  @media screen and (max-width: 1200px) {
+    .navitems {
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100vh;
+    }
+    
+    .navlinks {
+      margin-top: 20px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .sectionlinks {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    
+    .navlinks a {
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    .buttoncontainer {
+      margin: 20px 0;
+      text-align: center;
+      padding-bottom: 30px;
+    }
+    
+    .loginbutton, .signupbutton {
+      display: block;
+      margin: 10px auto;
+    }
+    
+    .logo {
+      margin: 20px auto;
+    }
+  }
   
 
   
@@ -666,6 +706,14 @@ div.real-world {
 
 /* testimonials section */
 
+.testimonial-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 
 .testimonials {
   display: grid;
