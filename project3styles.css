@@ -781,8 +781,6 @@ div.real-world {
 }
 
 
-/* testimonials section */
-
 .testimonial-wrapper {
   display: flex;
   flex-direction: column;
@@ -794,10 +792,11 @@ div.real-world {
 
 .testimonials {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Creates grid with a minimum width of 300px and equal column widths */
-  grid-gap: 30px; /* Sets gap between grid items */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Changed minmax value to 280px */
+  grid-gap: 30px;
   background-color: #58CC02;
   padding: 40px;
+  justify-items: center; /* Align grid items horizontally to center */
 }
 
 .testimonial {
@@ -808,6 +807,7 @@ div.real-world {
   background-color: #ffffff;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
+  width: 100%; /* Set width to 100% to fill grid item */
 }
 
 .testimonial-img {
@@ -815,7 +815,6 @@ div.real-world {
   justify-content: center;
   align-items: center;
 }
-
 
 .testimonial-img img {
   width: 100%;
@@ -837,19 +836,16 @@ div.real-world {
   text-align: center;
 }
 
+.testimonials h1 {
+  text-align: center; /* Align header text to center */
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
 @media screen and (max-width: 1200px) {
   .testimonials {
     padding: 30px;
   }
-
-}
-.testimonial-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
 }
 
 
