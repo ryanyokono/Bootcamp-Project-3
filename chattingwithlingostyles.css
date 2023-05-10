@@ -37,35 +37,41 @@
   
   
 
+  .logo {
+    width: 250px;
+    height: auto;
+    margin-right: auto;
+    padding-right: 20px;
+  }
+  
   .navbar {
-    background: #fff;
-    border-bottom: 2px solid #e5e5e5;
     position: sticky;
     top: 0;
     width: 100%;
     z-index: 210;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 0 50px;
+    background: #fff;
+    border-bottom: 2px solid #e5e5e5;
   }
   
   .navitems {
-    align-items: center;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   
   .navlinks {
-    align-items: center;
     display: flex;
-    border: 0;
+    align-items: center;
     font-size: 120%;
-    vertical-align: baseline;
     gap: 80px;
+    border: 0;
+    vertical-align: baseline;
   }
-
+  
   .navlinks a {
-    border-bottom: 3px solid transparent; 
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding: 10px 0;
+    border-bottom: 3px solid transparent;
     transition: border-color 0.3s ease-in-out;
     cursor: pointer;
   }
@@ -75,45 +81,66 @@
   }
   
   .sectionlinks {
-    align-items: center;
     display: flex;
-    flex-direction: row;
-    height: 100%;
-    font-family: dinnextroundedltpuploadedfile;
-    color: #767373;
+    align-items: center;
     gap: 30px;
+    height: 100%;
+    color: #767373;
+    font-family: dinnextroundedltpuploadedfile;
     white-space: nowrap;
   }
-
-
-
+  
+  .toggle-section-links {
+    display: none;
+  }
+  
   .buttoncontainer {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     gap: 10px;
-    margin-right: 10%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: auto;
   }
   
   
-
   
-  .auth-buttons button {
-    background-color: #5c78ff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin-left: 20px;
+  @media (max-width: 1100px) {
+    .navlinks {
+      flex-wrap: wrap;
+    }
+    .sectionlinks {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+    }
+    .toggle-section-links {
+      display: block;
+      text-align: right;
+      padding: 10px;
+      cursor: pointer;
+    }
+    .sectionlinks.show {
+      display: flex;
+    }
+  
+    .buttoncontainer {
+      padding: 10px;
+      align-items: flex-end;
+    }
   }
   
-  .auth-buttons button:hover {
-    background-color: #4c64d1;
+  @media (max-width: 650px) {
+    .buttoncontainer {
+      height: auto;
+      flex-direction: column; /* add this line */
+      max-height: 200px; /* adjust this value as needed */
+    }
   }
 
   .signupbutton {
@@ -238,14 +265,16 @@ h3 {
 
 
 
-
+.hero-image-container-chat {
+  flex: auto;
+}
 
 .chat {
     background-color: #fff;
     border-radius: 20px;
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-    margin: 20px 60px 20px 400px;
+    margin: 20px 40px 20px 40px;
     overflow-y: auto;
     height: 600px;
 }
@@ -317,8 +346,8 @@ h3 {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    margin-left: 600px;
-    margin-right: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
     margin-bottom: 100px;
 }
 
