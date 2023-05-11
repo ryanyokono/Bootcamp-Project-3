@@ -163,6 +163,11 @@ h3 {
 }
 
 @media (max-width: 650px) {
+
+  .navlinks {
+    flex-wrap: wrap;
+  }
+  
   .buttoncontainer {
     height: auto;
     flex-direction: column; /* add this line */
