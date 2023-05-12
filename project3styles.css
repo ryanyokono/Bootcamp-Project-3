@@ -392,6 +392,7 @@ h3 {
   align-items: flex-start;
   padding: var(--spacing);
   order: 2;
+  padding-right: 25%;
 }
 
 .personalized-lessons__title {
@@ -458,6 +459,7 @@ h3 {
   align-items: flex-start;
   padding: var(--spacing);
   order: 1;
+  margin-left: 20%;
 }
 
 .instant-feedback__title {
@@ -548,6 +550,7 @@ h3 {
   align-items: flex-start;
   padding: var(--spacing);
   order: 2;
+  margin-right: 20%;
 }
 
 .adaptive-learning__title {
@@ -613,6 +616,7 @@ h3 {
   align-items: flex-start;
   padding: var(--spacing);
   order: 1;
+  margin-left: 20%;
 }
 
 .real-world-context__title {
